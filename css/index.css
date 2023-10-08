@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #373849;
+    height: 100vh;
+}
+
+.container {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 25px;
+}
+
+.right img {
+    border: 0px 0px 8px 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.content.form {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    align-self: start;
+}
+
+h1 {
+    font-family: "Roboto";
+    font-size: 45px;
+}
+
+p {
+    font-family: "Roboto";
+    margin-bottom: 45px;
+}
+
+ul {
+    margin-top: 15px;
+    margin-bottom: 45px;
+    list-style-image: url(../assets/images/icon-list.svg);
+}
+
+li {
+    font-family: "Roboto";
+}
+
+
+
+input {
+    border: 1px solid #DBDBDB;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: "Roboto";
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+button {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-radius: 8px;
+    border: 1px solid #373849;
+    background-color: #373849;
+    color: white;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+.activated {
+    background-image: linear-gradient(to right, #FC546F, #FF6548);
+    border: 1px solid #FC546F;
+}
+
+.notgood {
+    background-color: #FFE8E6;
+    border: 1px solid #DD8F92;
+    color: #DD8F92;
+}
+
+.notgood::placeholder {
+    color: #DD8F92;
+}
+
+.labels p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Roboto";
+}
+
+.error {
+    color: #FC546F;
+    visibility: hidden;
+}
+
+
+/* if screen < 800px */
+@media screen and (max-width: 800px) {
+
+    /* Réinitialise le css */
+    .container {
+        flex-direction: column-reverse;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+}
